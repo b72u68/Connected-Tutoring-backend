@@ -23,6 +23,11 @@ Run the following command
 python app.py
 ```
 
+or 
+
+```bash
+flask run
+```
 ## Structure
 
 ```
