@@ -4,18 +4,18 @@
 
 Git clone this repository to your local machine
 
-`git clone https://github.com/b72u68/Connected-Tutoring-backend`
+```git clone https://github.com/b72u68/Connected-Tutoring-backend```
 
 Go to the cloned repository and install the required libraries in `requirements.txt`. 
 (This project uses `Python 3` so be sure to have `Python 3` in your local machine)
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 ## Start the development server
 
 Run the following command
 
-`python app.py`
+```python app.py```
 
 ## Structure
 
