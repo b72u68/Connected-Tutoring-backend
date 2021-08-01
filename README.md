@@ -19,6 +19,7 @@ Run the following command
 
 ## Structure
 
+```
 Connected-Tutoring-backend
   |-- api
       |-- __init__.py
@@ -30,6 +31,7 @@ Connected-Tutoring-backend
   README.md
   .gitignore
   requirements.txt
+```
   
 Project API and routes will be contained in `api` directory. 
 
