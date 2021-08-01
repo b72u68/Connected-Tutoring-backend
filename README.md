@@ -8,8 +8,8 @@ Git clone this repository to your local machine
 git clone https://github.com/b72u68/Connected-Tutoring-backend
 ```
 
-Go to the cloned repository and install the required libraries in `requirements.txt`. 
-(This project uses __Python 3__ so be sure to have __Python 3__ in your local machine)
+Go to the cloned repository and install the required libraries in `requirements.txt`
+(This project uses __Python 3__ so be sure to have __Python 3__ in your local machine).
 
 ```bash
 pip install -r requirements.txt
