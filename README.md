@@ -35,7 +35,7 @@ or
 export FLASK_DEBUG=True
 flask run --host=0.0.0.0
 ```
-## Structure
+## Project structure
 
 ```
 Connected-Tutoring-backend
@@ -60,3 +60,7 @@ Connected-Tutoring-backend
 `utils`:  utility functions and tools.
 
 `inputs`: input format and validation.
+
+## Future plan for deployment
+
+Might use Docker and deploy on AWS.
