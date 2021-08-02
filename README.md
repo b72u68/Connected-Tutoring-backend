@@ -39,12 +39,18 @@ Connected-Tutoring-backend
   |-- models
       |-- __init__.py
       |-- another models files
+  |-- utils
+  |-- inputs
   app.py
   README.md
   .gitignore
   requirements.txt
 ```
   
-Project API and routes will be contained in `api` directory. 
+`api`: project API and routes. 
 
-Any files or functions that related to database, tasks, workers, etc. will be placed in `models`.
+`models`: files or functions that related to database, tasks, workers, etc.
+
+`utils`:  utility functions and tools.
+
+`inputs`: input format and validation.
