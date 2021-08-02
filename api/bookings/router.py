@@ -4,6 +4,10 @@ from __future__ import unicode_literals
 from flask import Blueprint
 from flask import request
 
+from api.decors import api
+
+from .inputs import GetBookingsInputs
+
 booking_blueprint = Blueprint("bookings", __name__, url_prefix="/bookings")
 
 
@@ -13,5 +17,6 @@ def make_booking():
 
 
 @booking_blueprint.route("/", methods=["GET"], strict_slashes=False)
+@api(inputs_cls=GetBookingsInputs)
 def get_bookings():
     return "Hello GET"
