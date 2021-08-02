@@ -15,6 +15,12 @@ Go to the cloned repository and install the required libraries in `requirements.
 pip install -r requirements.txt
 ```
 
+If you haven't had `pip` yet, follow the instruction in this [link](https://github.com/pypa/pip)
+to install `pip`.
+
+We encouraged you to use virtual environment for package management, though it is not 
+required. If you decided to try virtual environment for python, follow this [link](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/).
+
 ## Start the development server
 
 Run the following command
