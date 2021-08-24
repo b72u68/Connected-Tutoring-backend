@@ -2,7 +2,7 @@ from sys import stderr
 from datetime import date
 from sqlalchemy.exc import SQLAlchemyError
 
-from diner import TutoringDatabase, User, Tutor, Subject, TeachRecord, Class, Take, Booking
+from database import TutoringDatabase, User, Tutor, Subject, TeachRecord, Class, Take, Booking
 
 
 def add_starter_data(session):
