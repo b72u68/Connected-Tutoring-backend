@@ -1,12 +1,18 @@
 from flask import Flask
 
 from api import booking_blueprint
+from api import profile_blueprint
+from api import class_blueprint
+from api import tutor_blueprint
 
 
 def create_app():
     app = Flask(__name__)
 
     app.register_blueprint(booking_blueprint)
+    app.register_blueprint(profile_blueprint)
+    app.register_blueprint(class_blueprint)
+    app.register_blueprint(tutor_blueprint)
 
     return app
 

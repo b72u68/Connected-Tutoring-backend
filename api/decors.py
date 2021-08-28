@@ -3,12 +3,11 @@ from __future__ import unicode_literals
 
 from functools import wraps
 
-from flask import request as flask_request
 from flask import jsonify
 from flask import Response
 
 
-def api(inputs_cls=None, request_cls=None,
+def api(inputs_cls=None,
         success_code=200):
 
     def _decor(f):
@@ -20,11 +19,6 @@ def api(inputs_cls=None, request_cls=None,
                 if inputs_cls:
                     inputs = inputs_cls()
                     inputs.validate()
-
-                # Convert flask request to protobuf message
-                if request_cls:
-                    request = _get_request(request_cls)
-                    args = (request, ) + args
 
                 # Make response
                 response = f(*args, **kwargs)
@@ -38,16 +32,9 @@ def api(inputs_cls=None, request_cls=None,
 
             except Exception as e:
                 return {
-                    'message': e.message,
+                    'message': e,
                     'error': True,
                 }
         return _wrap
 
     return _decor
-
-
-def _get_request(request_cls, **kwargs):
-    request = request_cls()
-    body = flask_request.get_json(force=True, silent=True)
-    if body:
-        return request
